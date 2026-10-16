@@ -1,0 +1,10 @@
+model,true,predicted,count
+rf,peace,one,35
+rf,three,four,33
+rf,peace,three,30
+mlp,one,fist,38
+mlp,peace,one,32
+mlp,three,peace,29
+cnn,one,fist,19
+cnn,fist,one,16
+cnn,three,fist,12

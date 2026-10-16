@@ -1,0 +1,144 @@
+{
+  "model": "cnn",
+  "architecture": "spatial",
+  "class_mapping": [
+    {
+      "class_id": 0,
+      "gesture": "fist"
+    },
+    {
+      "class_id": 1,
+      "gesture": "one"
+    },
+    {
+      "class_id": 2,
+      "gesture": "peace"
+    },
+    {
+      "class_id": 3,
+      "gesture": "three"
+    },
+    {
+      "class_id": 4,
+      "gesture": "four"
+    },
+    {
+      "class_id": 5,
+      "gesture": "palm"
+    }
+  ],
+  "features": [
+    "lm_0",
+    "lm_1",
+    "lm_2",
+    "lm_3",
+    "lm_4",
+    "lm_5",
+    "lm_6",
+    "lm_7",
+    "lm_8",
+    "lm_9",
+    "lm_10",
+    "lm_11",
+    "lm_12",
+    "lm_13",
+    "lm_14",
+    "lm_15",
+    "lm_16",
+    "lm_17",
+    "lm_18",
+    "lm_19",
+    "lm_20",
+    "lm_21",
+    "lm_22",
+    "lm_23",
+    "lm_24",
+    "lm_25",
+    "lm_26",
+    "lm_27",
+    "lm_28",
+    "lm_29",
+    "lm_30",
+    "lm_31",
+    "lm_32",
+    "lm_33",
+    "lm_34",
+    "lm_35",
+    "lm_36",
+    "lm_37",
+    "lm_38",
+    "lm_39",
+    "lm_40",
+    "lm_41",
+    "lm_42",
+    "lm_43",
+    "lm_44",
+    "lm_45",
+    "lm_46",
+    "lm_47",
+    "lm_48",
+    "lm_49",
+    "lm_50",
+    "lm_51",
+    "lm_52",
+    "lm_53",
+    "lm_54",
+    "lm_55",
+    "lm_56",
+    "lm_57",
+    "lm_58",
+    "lm_59",
+    "lm_60",
+    "lm_61",
+    "lm_62"
+  ],
+  "seed": 42,
+  "smoke_test": false,
+  "run_name": "spatial",
+  "preprocessing": {
+    "detector_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "version": "pixel_wrist_max3d_square_v2",
+    "detection_confidence": 0.5,
+    "presence_confidence": 0.5,
+    "tracking_confidence": 0.5,
+    "roi_scale": 1.4,
+    "epsilon": 1e-06,
+    "num_hands": 1,
+    "mirror_input": false,
+    "detector_input_padding": 0.5,
+    "detector_runtime_version": "0.10.21"
+  },
+  "preprocessing_fingerprint": "565aaa8eccdde5d6aa734ef05ff985c4ddfbffed4571b7a791002b6a00734934",
+  "image_size": 128,
+  "dropout": 0.3,
+  "optimizer": "AdamW",
+  "weight_decay": 0.0001,
+  "train_augmentation": {
+    "rotation_degrees": 10,
+    "brightness": [
+      0.85,
+      1.15
+    ],
+    "contrast": [
+      0.85,
+      1.15
+    ],
+    "flip": false
+  },
+  "selection": "validation macro-F1 descending, validation loss ascending",
+  "batch_size": 64,
+  "max_epochs": 60,
+  "patience": 12,
+  "learning_rate": 0.0003,
+  "scheduler": {
+    "name": "ReduceLROnPlateau",
+    "mode": "max",
+    "factor": 0.5,
+    "patience": 3,
+    "threshold": 0.0001,
+    "threshold_mode": "abs",
+    "min_lr": 1e-06
+  },
+  "transfer_schedule": null,
+  "best_epoch": 47
+}

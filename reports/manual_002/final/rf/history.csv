@@ -1,0 +1,2 @@
+step,train_accuracy,train_macro_f1,validation_accuracy,validation_macro_f1,smoke_test,epoch,learning_rate,train_loss,validation_loss
+1,0.9953408110440034,0.9945149743430317,0.918970189701897,0.8988170174470179,False,,,,

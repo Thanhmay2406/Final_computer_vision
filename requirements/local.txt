@@ -1,0 +1,17 @@
+# Python 3.11. CPU PyTorch; install from the official CPU wheel index as in README.
+# Match these versions when training and loading joblib artifacts.
+numpy==1.26.4
+pandas==2.2.3
+Pillow==11.1.0
+scikit-learn==1.6.1
+joblib==1.4.2
+matplotlib==3.10.0
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
+nbformat==5.10.4
+nbclient==0.10.2
+ipykernel==6.29.5
+threadpoolctl==3.5.0
+pytest==8.3.5
+
+pyparsing==3.2.1

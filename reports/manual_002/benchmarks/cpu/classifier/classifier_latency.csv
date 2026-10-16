@@ -1,0 +1,4 @@
+model,cpu_latency_median_ms,cpu_latency_p95_ms,benchmark_samples,warmup,threads,batch_size
+rf,7.592674000000001,7.9546601,200,20,1,1
+mlp,0.091952,0.1047959,200,20,1,1
+cnn,3.3663119999999997,3.922954999999999,200,20,1,1

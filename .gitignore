@@ -1,0 +1,32 @@
+# Local Python environments and caches
+.venv*/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datasets, checkpoints, experiment sessions and downloaded release archives
+/data/
+/data_v2*/
+/results/
+/results_v2/
+/models/
+/.release/
+/handgesture-webcam-*.zip
+/assets/pretrained/
+/notebooks/EDA.ipynb
+
+# Local orchestration, credentials and machine-specific state
+/docs/implementation/
+/docs/*.docx
+/.aws/
+/.codex/
+/.agents/
+/.superpowers/
+.env
+.env.*
+!.env.example
+kaggle.json
+*.pem
+*.key
+*.log

@@ -1,0 +1,4 @@
+model,source_test_samples,accepted_test_samples,detector_rejected_test_samples,classifier_correct,classifier_errors,detector_coverage,conditional_classifier_accuracy,success_fraction_source_test_no_hand_as_failure
+rf,5804,3680,2124,3372,308,0.6340454858718125,0.9163043478260869,0.5809786354238456
+mlp,5804,3680,2124,3416,264,0.6340454858718125,0.9282608695652174,0.5885596140592695
+cnn,5804,3680,2124,3517,163,0.6340454858718125,0.9557065217391304,0.6059614059269469

@@ -1,0 +1,25 @@
+{
+  "scope": "publication verification on a staged source-only export with release ZIP extracted",
+  "tests": {
+    "passed": 102,
+    "seconds": 58.65,
+    "dataset_required": false,
+    "camera_required": false
+  },
+  "model_artifact_verification": "passed for RF/MLP/CNN without dataset",
+  "reload_prediction_check": {
+    "samples_per_model": 6,
+    "maximum_absolute_error": {
+      "rf": 1.1102230246251565e-16,
+      "mlp": 5.8414917014637524e-08,
+      "cnn": 1.4130355835417774e-06
+    },
+    "comparison": "stored full-run probabilities; original images used only locally, not published"
+  },
+  "review": "no blocking findings",
+  "dataset_images_in_git": false,
+  "webcam_media_in_git_or_release": false,
+  "proposal_docx_in_git": false,
+  "checkpoint_distribution": "GitHub Release manual-002; SHA-256 in manual_002.json",
+  "notes": "Tests used the existing tested Python3.11 local environment with an isolated copy of the staged code; Windows has not been verified."
+}

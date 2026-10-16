@@ -1,0 +1,81 @@
+{
+  "created_at_utc": "2026-10-16T09:23:56.292937+00:00",
+  "scope": "three separate live webcam sessions; not same-video comparison or labeled accuracy test",
+  "video_recording": "declined_by_user",
+  "common_video_benchmark": "pending_input",
+  "deployment_selection": "pending_common_input_benchmark_and_manual_correctness",
+  "checks": {
+    "rf": {
+      "completed": true,
+      "resolution_640x480": true,
+      "no_stale_label_in_no_hand_or_uncertain": true,
+      "recognized_confidence_threshold": true,
+      "minimum_reacquisition_frames_after_no_hand": true,
+      "display_enabled": true,
+      "manual_gesture_correctness": "awaiting_observer_confirmation",
+      "user_exit_key": "not_verified_session_ended_by_frame_limit",
+      "fps_median_p95_recomputed": true,
+      "component_timing_sums_match": true,
+      "checkpoint_sha256": {
+        "model.joblib": "fc0a8ef87120572ea3e3c96b6c3e6ad4437030082c81416a7b466ee61be4959f",
+        "model_config.json": "1d9828bb90e4ef023c036af9fdad0b27345eb3764ab1c5c7b05ae525e34f183f",
+        "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+      }
+    },
+    "mlp": {
+      "completed": true,
+      "resolution_640x480": true,
+      "no_stale_label_in_no_hand_or_uncertain": true,
+      "recognized_confidence_threshold": true,
+      "minimum_reacquisition_frames_after_no_hand": true,
+      "display_enabled": true,
+      "manual_gesture_correctness": "awaiting_observer_confirmation",
+      "user_exit_key": "not_verified_session_ended_by_frame_limit",
+      "fps_median_p95_recomputed": true,
+      "component_timing_sums_match": true,
+      "checkpoint_sha256": {
+        "model.pt": "2368622ad070123179b6353122524edbd117425e1ff9d9e938d02d153e93cfb1",
+        "scaler.joblib": "bc94cefd627b4140e77c2d0c40a9359c9cda9b2b95f2a5220b093f7924f003cd",
+        "model_config.json": "bd8d49785c0a79ab24c88e27260baa27880d0d0a60ed73143df3611f37b186ea",
+        "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+      }
+    },
+    "cnn": {
+      "completed": true,
+      "resolution_640x480": true,
+      "no_stale_label_in_no_hand_or_uncertain": true,
+      "recognized_confidence_threshold": true,
+      "minimum_reacquisition_frames_after_no_hand": true,
+      "display_enabled": true,
+      "manual_gesture_correctness": "awaiting_observer_confirmation",
+      "user_exit_key": "not_verified_session_ended_by_frame_limit",
+      "fps_median_p95_recomputed": true,
+      "component_timing_sums_match": true,
+      "checkpoint_sha256": {
+        "model.pt": "9410369359eef36b438f23cd126b90111efee899b423e5b204685292704de20c",
+        "model_config.json": "f4545e05efe2dacda84cec8beb896d6637e679dc00395d3c4b00bbd6e2c4b7c4",
+        "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+      }
+    }
+  },
+  "measured_artifact_sha256": {
+    "acceptance/live_rf_01/frames.csv": "bc896cae20ba6877dbea5a7ab7d03b6a7efec520cf98659c23b917ebbd2dcf8c",
+    "acceptance/live_rf_01/summary.json": "d0767783493729001233c935be8bc69f7eb9dc2ccaa381e41749bf6bda2ea0bb",
+    "acceptance/live_rf_01/protocol.json": "fd87a9d9afcff97a17a33f80fbf8a0b3bd56ffd9783ac56276f8446a85da618a",
+    "acceptance/live_mlp_01/frames.csv": "573a50bb4c93cc7a3bfc0b7cee4700dc9a2b1627ce2b984621d2949fd40b26fd",
+    "acceptance/live_mlp_01/summary.json": "88d31c50cb04d4c006daa2eebc1af4b553bd1a50d276a42f4cb9851aedb95aa7",
+    "acceptance/live_mlp_01/protocol.json": "5f3693151014049a3c0ccd40f1da8e48ac49ac374391e887de9da4b5a4dd5415",
+    "acceptance/live_cnn_01/frames.csv": "dfbfe62b65cfb48dd59ef1a1fef036d9cbe085d39ab702039468587aafadedc6",
+    "acceptance/live_cnn_01/summary.json": "4ca370f3a2583afa3f41616edd900a75646f03492fc6f6f3d5379de861cb229f",
+    "acceptance/live_cnn_01/protocol.json": "d83117cc81553c82fe3e98222eef95b4ea9a848b878cbc6c941e2172f6662d1b"
+  },
+  "consolidated_report": "docs/reports/full_manual_002.md",
+  "source_test_diagnostic": {
+    "path": "source_test_diagnostic.csv",
+    "scope": "derived from existing predictions and source split; counts no_hand as failure; not webcam accuracy",
+    "source_test_samples": 5804,
+    "accepted_test_samples": 3680,
+    "rejected_test_samples": 2124
+  },
+  "completed_at_utc": "2026-10-16T09:28:00.237355+00:00"
+}

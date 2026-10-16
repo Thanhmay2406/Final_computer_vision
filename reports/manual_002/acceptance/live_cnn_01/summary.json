@@ -1,0 +1,22 @@
+{
+  "measured_frames": 600,
+  "requested_frames": 600,
+  "warmup": 30,
+  "complete": true,
+  "termination_reason": "frame_limit",
+  "hand_frames": 485,
+  "fps": 16.65071681780135,
+  "hand_positive_fps": 16.571895234149174,
+  "median_ms": 60.462980498414254,
+  "p95_ms": 72.64264810055464,
+  "error": null,
+  "display": true,
+  "model": "cnn",
+  "smoothing": {
+    "threshold": 0.7,
+    "window": 7,
+    "votes": 5
+  },
+  "preprocessing_fingerprint": "565aaa8eccdde5d6aa734ef05ff985c4ddfbffed4571b7a791002b6a00734934",
+  "scope": "capture/decode + detector + preprocessing + classifier + overlay/render; display wait included when enabled"
+}

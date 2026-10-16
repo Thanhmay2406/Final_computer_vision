@@ -1,0 +1,2 @@
+# Optional local Kaggle submission / fetch / background watcher; not needed for model inference.
+kaggle==2.2.4

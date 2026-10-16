@@ -1,0 +1,107 @@
+{
+  "format_version": 2,
+  "identity": {
+    "source_manifest_sha256": "541f42589fa294ae7b4fff4494293b4a280ea514147e1fa86dc696a094f71b08",
+    "preprocessing_fingerprint": "565aaa8eccdde5d6aa734ef05ff985c4ddfbffed4571b7a791002b6a00734934",
+    "limit_per_class_split": null
+  },
+  "preprocessing": {
+    "detector_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+    "version": "pixel_wrist_max3d_square_v2",
+    "detection_confidence": 0.5,
+    "presence_confidence": 0.5,
+    "tracking_confidence": 0.5,
+    "roi_scale": 1.4,
+    "epsilon": 1e-06,
+    "num_hands": 1,
+    "mirror_input": false,
+    "detector_input_padding": 0.5,
+    "detector_runtime_version": "0.10.21"
+  },
+  "preprocessing_fingerprint": "565aaa8eccdde5d6aa734ef05ff985c4ddfbffed4571b7a791002b6a00734934",
+  "class_mapping": [
+    {
+      "class_id": 0,
+      "gesture": "fist"
+    },
+    {
+      "class_id": 1,
+      "gesture": "one"
+    },
+    {
+      "class_id": 2,
+      "gesture": "peace"
+    },
+    {
+      "class_id": 3,
+      "gesture": "three"
+    },
+    {
+      "class_id": 4,
+      "gesture": "four"
+    },
+    {
+      "class_id": 5,
+      "gesture": "palm"
+    }
+  ],
+  "smoke_test": false,
+  "counts": {
+    "source": 38687,
+    "accepted": 24755,
+    "rejected": 13932
+  },
+  "source_split_counts": {
+    "train": 27080,
+    "test": 5804,
+    "validation": 5803
+  },
+  "split_counts": {
+    "train": 17385,
+    "validation": 3690,
+    "test": 3680
+  },
+  "class_split_counts": {
+    "fist": {
+      "test": 575,
+      "train": 2767,
+      "validation": 608
+    },
+    "four": {
+      "test": 821,
+      "train": 3868,
+      "validation": 820
+    },
+    "one": {
+      "test": 352,
+      "train": 1617,
+      "validation": 333
+    },
+    "palm": {
+      "test": 937,
+      "train": 4441,
+      "validation": 954
+    },
+    "peace": {
+      "test": 476,
+      "train": 2219,
+      "validation": 442
+    },
+    "three": {
+      "test": 519,
+      "train": 2473,
+      "validation": 533
+    }
+  },
+  "rejection_reasons": {
+    "no_hand": 13932
+  },
+  "artifact_sha256": {
+    "manifest.csv": "d769f3942e5a5288e3458b7d289760df8c9f2e3af0fc4294b3b57fdb4f3883fe",
+    "rejections.csv": "d05590f4af89710bf4b53a04191a8d2f6d158a150369396b57b4fade36a65155"
+  },
+  "limits": [
+    "source random split retained; not subject-wise",
+    "source images were previously cropped; webcam domain differs"
+  ]
+}

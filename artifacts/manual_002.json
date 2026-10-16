@@ -1,0 +1,41 @@
+{
+  "release_tag": "manual-002",
+  "repository": "Thanhmay2406/Final_computer_vision",
+  "asset": "handgesture-webcam-manual-002.zip",
+  "download_url": "https://github.com/Thanhmay2406/Final_computer_vision/releases/download/manual-002/handgesture-webcam-manual-002.zip",
+  "sha256": "ea01e065da0c56824c479e5686bfd931f856e5360f8b3ac29376ea6193448760",
+  "bytes": 21518775,
+  "extract_at": "repository root",
+  "model_root": "models/manual_002",
+  "detector": "assets/mediapipe/hand_landmarker.task",
+  "detector_sha256": "fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1",
+  "class_order": [
+    "fist",
+    "one",
+    "peace",
+    "three",
+    "four",
+    "palm"
+  ],
+  "model_artifact_sha256": {
+    "rf": {
+      "model.joblib": "fc0a8ef87120572ea3e3c96b6c3e6ad4437030082c81416a7b466ee61be4959f",
+      "model_config.json": "1d9828bb90e4ef023c036af9fdad0b27345eb3764ab1c5c7b05ae525e34f183f",
+      "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+    },
+    "mlp": {
+      "model.pt": "2368622ad070123179b6353122524edbd117425e1ff9d9e938d02d153e93cfb1",
+      "scaler.joblib": "bc94cefd627b4140e77c2d0c40a9359c9cda9b2b95f2a5220b093f7924f003cd",
+      "model_config.json": "bd8d49785c0a79ab24c88e27260baa27880d0d0a60ed73143df3611f37b186ea",
+      "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+    },
+    "cnn": {
+      "model.pt": "9410369359eef36b438f23cd126b90111efee899b423e5b204685292704de20c",
+      "model_config.json": "f4545e05efe2dacda84cec8beb896d6637e679dc00395d3c4b00bbd6e2c4b7c4",
+      "class_mapping.json": "f340a0911020e4f765941d571ee0e95686f2c4a1b301f15313d8ca939344e69e"
+    }
+  },
+  "contains_dataset": false,
+  "contains_webcam_images_or_video": false,
+  "excluded": "photo galleries; dataset images; original proposal; executed notebook; local credentials"
+}
